@@ -37,6 +37,15 @@ function DraftScreen() {
   );
 }
 
+// Secret objective screen for viewing a player's secret objective
+function ObjectiveScreen() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <Text>Your object can be viewed here.</Text>
+    </View>
+  );
+}
+
 const Tab = createBottomTabNavigator();
 
 function App(): JSX.Element {
@@ -51,6 +60,7 @@ function App(): JSX.Element {
       <Tab.Navigator>
         <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="Draft" component={DraftScreen} />
+        <Tab.Screen name="Objective" component={ObjectiveScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );
