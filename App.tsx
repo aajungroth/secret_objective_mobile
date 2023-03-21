@@ -28,6 +28,15 @@ function HomeScreen() {
   );
 }
 
+// Draft screen for choosing one of three secret objectives
+function DraftScreen() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <Text>Choose one of these objectives.</Text>
+    </View>
+  );
+}
+
 const Tab = createBottomTabNavigator();
 
 function App(): JSX.Element {
@@ -41,6 +50,7 @@ function App(): JSX.Element {
     <NavigationContainer>
       <Tab.Navigator>
         <Tab.Screen name="Home" component={HomeScreen} />
+        <Tab.Screen name="Draft" component={DraftScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );
