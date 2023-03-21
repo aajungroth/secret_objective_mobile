@@ -19,6 +19,8 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+const Tab = createBottomTabNavigator();
+
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
@@ -28,7 +30,9 @@ function App(): JSX.Element {
 
   return (
     <NavigationContainer>
+      <Tab.Navigator>
 
+      </Tab.Navigator>
     </NavigationContainer>
   );
 }
