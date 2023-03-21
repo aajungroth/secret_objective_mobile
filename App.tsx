@@ -9,6 +9,14 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+import {
+  Colors,
+  DebugInstructions,
+  Header,
+  LearnMoreLinks,
+  ReloadInstructions,
+} from 'react-native/Libraries/NewAppScreen';
+import { NavigationContainer } from '@react-navigation/native';
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -18,7 +26,9 @@ function App(): JSX.Element {
   };
 
   return (
+    <NavigationContainer>
 
+    </NavigationContainer>
   );
 }
 
