@@ -19,6 +19,15 @@ import {
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
+// Home screen component for sign up, login in, and deal request
+function HomeScreen() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>Deal me an objective!</Text>
+    </View>
+  );
+}
+
 const Tab = createBottomTabNavigator();
 
 function App(): JSX.Element {
@@ -31,7 +40,7 @@ function App(): JSX.Element {
   return (
     <NavigationContainer>
       <Tab.Navigator>
-
+        <Tab.Screen name="Home" component={HomeScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );
